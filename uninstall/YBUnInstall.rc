@@ -1,0 +1,346 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+#include "lang_string.h"
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "atlres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (Simplified, PRC) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS
+BEGIN
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL
+    "P",            ID_FILE_PRINT,          VIRTKEY, CONTROL
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY 
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_CONFIRM_DIALOG DIALOGEX 0, 0, 316, 183
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    PUSHBUTTON      "一键卸载",IDC_BUTTON_UNINSTALL,58,77,196,28
+    CONTROL         "同时删除个人用户配置和收藏",IDC_CHECK_DELETE_PROFILE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,0,173,120,10
+    PUSHBUTTON      "",IDC_CONFIRM_CLOSE,292,0,24,14
+    LTEXT           "YY浏览器正在运行，点击“一键卸载”将关闭浏览器并卸载",IDC_YYEXPLORER_RUNNING_STATIC,49,122,198,8
+END
+
+IDD_PROGRESS_DIALOG DIALOGEX 0, 0, 316, 183
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    CONTROL         "",IDC_UNINSTALL_PROGRESS,"msctls_progress32",WS_BORDER,0,97,316,14
+    LTEXT           "",IDC_PROGRESS_TITLE,6,4,8,8
+    LTEXT           "",IDC_UNINSTALLING_TEXT,8,85,8,8
+    PUSHBUTTON      "",IDC_PROGRESS_CLOSE,266,0,50,14
+    PUSHBUTTON      "",IDC_UNINSTALL_COMPLETE,130,126,50,14
+END
+
+IDD_FEEDBACK_DIALOG DIALOGEX 0, 0, 321, 312
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    PUSHBUTTON      "",IDC_FEEDBACK_CLOSE,304,0,34,14
+    PUSHBUTTON      "提交反馈",IDC_FEEDBACK_BUTTON,61,105,112,26
+    EDITTEXT        IDC_REASON_EDIT,18,33,288,54,ES_MULTILINE | ES_AUTOVSCROLL | ES_WANTRETURN | NOT WS_BORDER
+    LTEXT           "和产品经理聊聊",IDC_SORRY_STATIC,29,9,57,8
+    LTEXT           "说出使用中遇到的问题或者直接吐槽，YY浏览器的产品经理将为你处理问题",IDC_OTHER_REASON_STATIC,25,34,265,8
+END
+
+IDD_DIALOG_CHOOSE_UNINSTALL DIALOGEX 0, 0, 309, 138
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "",IDC_BUTTON_HOLD_EXPLORE,44,92,50,14
+    PUSHBUTTON      "",IDC_BUTTON_ADVICE,193,89,50,14
+    PUSHBUTTON      "",IDC_BUTTON_CLOSE,252,7,50,14
+    PUSHBUTTON      "残忍的卸载",IDC_CHOOSE_BUTTON_UNINSTALL,194,108,50,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// PNG
+//
+
+IDB_PNG_BACKGROUND      PNG                     "res\\background.png"
+IDB_PNG_CHECK_NORMAL    PNG                     "res\\check_normal.png"
+IDB_PNG_CLOSE_DOWN      PNG                     "res\\close_down.png"
+IDB_PNG_CLOSE_HOVER     PNG                     "res\\close_hover.png"
+IDB_PNG_CLOSE_NORMAL    PNG                     "res\\close_normal.png"
+IDB_PNG_FEEDBACK_DOWN   PNG                     "res\\feedback_down.png"
+IDB_PNG_FEEDBACK_HOVER  PNG                     "res\\feedback_hover.png"
+IDB_PNG_FEEDBACK_NORMAL PNG                     "res\\feedback_normal.png"
+IDB_PNG_PROGRESS        PNG                     "res\\progress.png"
+IDB_PNG_PROGERESS_BASE  PNG                     "res\\progress_base.png"
+IDB_PNG_UNCHECK_NORMAL  PNG                     "res\\uncheck_normal.png"
+IDB_PNG_UNINSTALL_DOWN  PNG                     "res\\uninstall_down.png"
+IDB_PNG_UNINSTALL_NORMAL PNG                     "res\\uninstall_normal.png"
+IDB_PNG_CANCEL_DOWN     PNG                     "res\\cancel_down.png"
+IDB_PNG_CANCEL_HOVER    PNG                     "res\\cancel_hover.png"
+IDB_PNG_CANCEL_NORMAL   PNG                     "res\\cancel_normal.png"
+IDB_PNG_UNINSTALLING_DOWN PNG                     "res\\uninstalling_pressed.png"
+IDB_PNG_UNINSTALLING_HOVER PNG                     "res\\uninstalling_hover.png"
+IDB_PNG_UNINSTALLING_NORMAL PNG                     "res\\uninstalling_normal.png"
+IDB_PNG_UNINSTALLING_DISABLE PNG                     "res\\uninstalling_disable.png"
+IDB_PNG_BKG_FEEDBACK    PNG                     "res\\bg_feedback.png"
+IDB_PNG_BKG_PROGRESS    PNG                     "res\\bg_uninstall.png"
+IDB_PNG_CHECK_DOWN      PNG                     "res\\check_down.png"
+IDB_PNG_UNCHECK_DOWN    PNG                     "res\\uncheck_down.png"
+IDB_PNG_UNINSTALL_HOVER PNG                     "res\\uninstall_hover.png"
+IDB_PNG_ADVICE          PNG                     "res\\advice.png"
+IDB_PNG_ADVICE_HOVER    PNG                     "res\\advice_hover.png"
+IDB_PNG_ADVICE_PRESSED  PNG                     "res\\advice_pressed.png"
+IDB_PNG_HOLD_YYEXPLORE  PNG                     "res\\hold_yyexplore_normal.png"
+IDB_PNG_HOLD_YYEXPLORE_HOVER PNG                     "res\\hold_yyexplore_hover.png"
+IDB_PNG_HOLD_YYEXPLORE_PRESSED PNG                     "res\\hold_yyexplore_pressed.png"
+IDB_PNG_CHOOSE_UNINSTALL_BACKGROUND PNG                     "res\\choose_uninstall_background.png"
+IDB_PNG_LINK_BG         PNG                     "res\\link_back.png"
+IDB_PNG_CLOSE_GRAY_HOVER PNG                     "res\\close_gray_hover.png"
+IDB_PNG_CLOSE_GRAY_PRESSED PNG                     "res\\close_gray_pressed.png"
+IDB_PNG_CLOSE_GRAY      PNG                     "res\\close_gray.png"
+IDB_PNG_UNINSTALL_BG    PNG                     "res\\uninstall_confirm_bg.png"
+IDB_PNG_UNINSTALLING_BG PNG                     "res\\uninstalling_bg.png"
+IDB_PNG_UNINSTALL_COMPLETE PNG                     "res\\uninstall_complete.png"
+IDB_PNG_UNINSTALL_COMPLETE_HOVER PNG                     "res\\uninstall_complete_hover.png"
+IDB_PNG_UNINSTALL_COMPLETE_PRESSED PNG                     "res\\uninstall_complete_pressed.png"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_CONFIRM_DIALOG, DIALOG
+    BEGIN
+    END
+
+    IDD_PROGRESS_DIALOG, DIALOG
+    BEGIN
+    END
+
+    IDD_FEEDBACK_DIALOG, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 294
+    END
+
+    IDD_DIALOG_CHOOSE_UNINSTALL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 302
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 131
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // Chinese (Simplified, PRC) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (United States) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""atlres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\YBUnInstall.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+FILEVERSION FILE_VERSION
+PRODUCTVERSION PRODUCT_VERSION
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0"
+        BEGIN
+            VALUE "FileDescription", "YBUnInstall Module"
+            VALUE "FileVersion", "STR_FILE_VERSION"
+            VALUE "InternalName", "YBUnInstall"
+            VALUE "LegalCopyright", "Copyright 2013"
+            VALUE "OriginalFilename", "YBUnInstall.exe"
+            VALUE "ProductName", "YBUnInstall Module"
+			VALUE "ProductVersion", STR_PRODUCT_VERSION
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDR_MAINFRAME           "YBUnInstall"
+END
+
+STRINGTABLE
+BEGIN
+    ID_FILE_NEW             "Create a new document\nNew"
+    ID_FILE_OPEN            "Open an existing document\nOpen"
+    ID_FILE_CLOSE           "Close the active document\nClose"
+    ID_FILE_SAVE            "Save the active document\nSave"
+    ID_FILE_SAVE_AS         "Save the active document with a new name\nSave As"
+    ID_FILE_PAGE_SETUP      "Change the printing options\nPage Setup"
+    ID_FILE_PRINT_SETUP     "Change the printer and printing options\nPrint Setup"
+    ID_FILE_PRINT           "Print the active document\nPrint"
+    ID_FILE_PRINT_PREVIEW   "Display full pages\nPrint Preview"
+END
+
+STRINGTABLE
+BEGIN
+    ID_APP_ABOUT            "Display program information, version number and copyright\nAbout"
+    ID_APP_EXIT             "Quit the application; prompts to save documents\nExit"
+END
+
+STRINGTABLE
+BEGIN
+    ID_NEXT_PANE            "Switch to the next window pane\nNext Pane"
+    ID_PREV_PANE            "Switch back to the previous window pane\nPrevious Pane"
+END
+
+STRINGTABLE
+BEGIN
+    ID_WINDOW_NEW           "Open another window for the active document\nNew Window"
+    ID_WINDOW_ARRANGE       "Arrange icons at the bottom of the window\nArrange Icons"
+    ID_WINDOW_CASCADE       "Arrange windows so they overlap\nCascade Windows"
+    ID_WINDOW_TILE_HORZ     "Arrange windows as non-overlapping tiles\nTile Windows"
+    ID_WINDOW_TILE_VERT     "Arrange windows as non-overlapping tiles\nTile Windows"
+    ID_WINDOW_SPLIT         "Split the active window into panes\nSplit"
+END
+
+STRINGTABLE
+BEGIN
+    ID_EDIT_CLEAR           "Erase the selection\nErase"
+    ID_EDIT_CLEAR_ALL       "Erase everything\nErase All"
+    ID_EDIT_COPY            "Copy the selection and put it on the Clipboard\nCopy"
+    ID_EDIT_CUT             "Cut the selection and put it on the Clipboard\nCut"
+    ID_EDIT_FIND            "Find the specified text\nFind"
+    ID_EDIT_PASTE           "Insert Clipboard contents\nPaste"
+    ID_EDIT_REPEAT          "Repeat the last action\nRepeat"
+    ID_EDIT_REPLACE         "Replace specific text with different text\nReplace"
+    ID_EDIT_SELECT_ALL      "Select the entire document\nSelect All"
+    ID_EDIT_UNDO            "Undo the last action\nUndo"
+    ID_EDIT_REDO            "Redo the previously undone action\nRedo"
+END
+
+STRINGTABLE
+BEGIN
+    ATL_IDS_SCSIZE          "Change the window size"
+    ATL_IDS_SCMOVE          "Change the window position"
+    ATL_IDS_SCMINIMIZE      "Reduce the window to an icon"
+    ATL_IDS_SCMAXIMIZE      "Enlarge the window to full size"
+    ATL_IDS_SCNEXTWINDOW    "Switch to the next document window"
+    ATL_IDS_SCPREVWINDOW    "Switch to the previous document window"
+    ATL_IDS_SCCLOSE         "Close the active window and prompts to save the documents"
+END
+
+STRINGTABLE
+BEGIN
+    ATL_IDS_SCRESTORE       "Restore the window to normal size"
+    ATL_IDS_SCTASKLIST      "Activate Task List"
+    ATL_IDS_MDICHILD        "Activate this window"
+END
+
+STRINGTABLE
+BEGIN
+    ATL_IDS_IDLEMESSAGE     "Ready"
+END
+
+STRINGTABLE
+BEGIN
+    ATL_IDS_MRU_FILE        "Open this document"
+END
+
+#endif    // English (United States) resources
+/////////////////////////////////////////////////////////////////////////////
+
+

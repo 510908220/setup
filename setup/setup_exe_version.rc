@@ -1,0 +1,48 @@
+// Copyright (c) 2011 The Chromium Authors. All rights reserved.
+// Use of this source code is governed by a BSD-style license that can be
+// found in the LICENSE file.
+
+#include <verrsrc.h>
+#include "lang_string.h"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION FILE_VERSION
+ PRODUCTVERSION PRODUCT_VERSION
+ FILEFLAGSMASK 0x17L
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "CompanyName", "YY Inc."
+            VALUE "FileDescription", "YYä¯ÀÀÆ÷"
+            VALUE "FileVersion", STR_FILE_VERSION
+            VALUE "InternalName", "yyexplorer_exe"
+            VALUE "LegalCopyright", "Copyright 2013 YY Inc.. All rights reserved."
+            VALUE "OriginalFilename", "yyexplorer.exe"
+            VALUE "ProductName", "YYä¯ÀÀÆ÷"
+            VALUE "ProductVersion", STR_PRODUCT_VERSION
+            VALUE "CompanyShortName", "YY Inc."
+            VALUE "ProductShortName", "YYä¯ÀÀÆ÷"
+            VALUE "LastChange", "183676"
+            VALUE "Official Build", "0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
